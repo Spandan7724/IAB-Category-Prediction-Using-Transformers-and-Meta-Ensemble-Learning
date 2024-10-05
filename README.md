@@ -24,6 +24,13 @@ The dataset includes the following columns:
 -   **Text**: The actual content of the article.
 -   **Target**: The IAB category label corresponding to each article (only in `train.csv`).
 
+## Dataset Link-
+
+https://www.kaggle.com/datasets/ankitprem/fibe-hack-the-vibe-2-0-ml-challenge-dataset
+
+
+https://drive.google.com/drive/folders/1IpQmp0782I6Fkz1FIz54z8GSSNHyEd83
+
 ## Approach
 
 ### Feature Engineering and Preprocessing
@@ -69,10 +76,6 @@ After training the individual models, an ensemble technique was employed:
 ## Results
 
 The ensemble of DeBERTa, MiniLM, and XGBoost meta-classifier provides a robust model that achieves high accuracy and F1 scores on the test set. The final model uses predicted probabilities from individual models as inputs to the meta-classifier, which produces the final prediction.
-
-## Dataset-
-
-https://drive.google.com/drive/folders/1IpQmp0782I6Fkz1FIz54z8GSSNHyEd83?usp=sharing
 
 ## Future Work
 
