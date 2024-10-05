@@ -66,40 +66,6 @@ After training the individual models, an ensemble technique was employed:
 -   **Sklearn**: For preprocessing, metrics, and model evaluation.
 -   **PyTorch**: For model training and GPU acceleration.
 
-## Directory Structure
-`
-`├── dataset_fibe
-│   ├── train.csv
-│   ├── test.csv
-│   ├── sample_submission.csv
-├── deberta
-│   ├── saved_model
-│   ├── saved_tokenizer
-│   ├── tokenized_train_dataset
-│   ├── tokenized_val_dataset
-│   ├── tokenized_test_dataset
-├── electra
-│   ├── saved_model
-│   ├── saved_tokenizer
-│   ├── tokenized_train_dataset
-│   ├── tokenized_val_dataset
-│   ├── tokenized_test_dataset
-├── minilm
-│   ├── saved_model
-│   ├── saved_tokenizer
-│   ├── tokenized_train_dataset
-│   ├── tokenized_val_dataset
-│   ├── tokenized_test_dataset
-├── nofin
-│   ├── saved_model
-│   ├── saved_tokenizer
-│   ├── tokenized_train_dataset
-│   ├── tokenized_val_dataset
-│   ├── tokenized_test_dataset
-├── meta_classifier_submission.csv
-├── meta_classifier.py  # Meta-classifier training and evaluation script
-├── README.md
-
 ## Results
 
 The ensemble of DeBERTa, MiniLM, and XGBoost meta-classifier provides a robust model that achieves high accuracy and F1 scores on the test set. The final model uses predicted probabilities from individual models as inputs to the meta-classifier, which produces the final prediction.
